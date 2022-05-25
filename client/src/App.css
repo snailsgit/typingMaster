@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@1,900&display=swap');
+
+html, body {
+  width: 100%;
+  height:100%;
+  font-weight: bold;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.custom-nav-bg {
+  background-color: #88ff66;
+}
+
+div.page {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  width: auto;
+}
+
+div.nav-box {
+  margin: auto;
+  display: flex;
+  max-width: 500px;
+}
+
+.navbar {
+  box-shadow: 0 3px 3px -3px rgb(199, 199, 199);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* home.js styling */
+div.card-container {
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: rgb(233, 233, 233);
+}
+
+Button.home {
+  margin: 10px;
+}
+
+/* practice.js styling */
+div.top-bar {
+  display:inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: rgb(233, 233, 233);
+}
+
+p.title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: auto;
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+p.next-game {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+div.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+Button.StartPractice {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/** Game display/stats styling */
+div.prompt-container {
+  padding: 7px;
+  width: 100%;
+  height: auto;
+  border: #88ff66;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.progress-container {
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: rgb(233, 233, 233);
+  text-align: center !important;
+}
+
+div.player-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.progress {
+  width: 75%;
+  height: 25px;
+  margin: auto;
+  background-color: darkgray;
+}
+
+@media all and (max-width: 1000px) {
+  div.progress {
+    width: 50%;
+
+  }
+}
+
+div.game-info {
+  text-align: center;
+}
+
+p.WPM {
+  margin: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  float: right;
+  font-size: 20px;
+}
+
+
+p.timer {
+  margin: 16px;
+  width: 102px;
+  float: left;
+  font-size: 20px;
+}
+
+
+span.countdown {
+  color: red;
+  font-size: 26px;
+  font-weight: bold;
+  margin: auto;
+  display: inline-block;
+  margin-right: 100px;
+  
+}
+
+p.filler {
+  font-size: 26px;
+  color: rgb(233, 233, 233);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Prompt styling */
+/* Examples of monospaced fonts include Courier, Courier New, Lucida Console,
+ Monaco, and Consolas. [...]*/
+span.word {
+  width: auto;
+  height: auto;
+  font-family:'Abril Fatface', Courier, monospace;
+  font-size: 26px;
+  margin-top: 3px;
+  border-top: 2px;
+}
+
+span.word.current {
+  border-radius: 4px;
+  border-top: 2px solid rgb(175, 171, 171);
+  padding-top: 0px;
+}
+
+
+span.character {
+  width: auto;
+  height: auto;
+  margin-left: 1px;
+  margin-right: 1px;
+  white-space: break-spaces;
+  
+  /* outline: 1px solid white */
+}
+
+span.character.correct  {
+  border-radius: 3px;
+  background-color: #e7fbd3;
+  color: #0e630e;
+}
+
+span.character.incorrect {
+  border-radius: 3px;
+  color: darkred;
+  background-color: pink;
+}
+
+span.character.current {
+  border-radius: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid dodgerblue;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* User Input */
+div.user-input {
+  width: 50%;
+  margin: auto;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+/* Countdown */
+div.countdown-container {
+  text-align: center;
+}
+span.countdown {
+  margin: auto;
+  display: inline-block;
+  font-size: 70px;
+}
+
+
+
+/* Game Review */
+div.game-review {
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+  border: #88ff66;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.welcome{
+  text-align: center;
+}
+
+.containerl{
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.imgbanner{
+  text-align: center;
+  justify-content: center;
+}
+
+.postureimg{
+  width: 200px;
+  margin:30px;
+}
+
+.homerowimg,.kbrimg{
+  width: 700px;
+  margin:30px;
+}
